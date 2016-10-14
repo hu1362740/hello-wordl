@@ -1,0 +1,22 @@
+Iconfont图标
+
+url：http://10.10.4.191:9096/demo.html
+axdicon.zip
+第一步：使用font-face声明字体
+@font-face {font-family: 'axdfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#axdfont') format('svg'); /* iOS 4.1- */
+}
+第二步：定义使用iconfont的样式
+.axdfont{
+    font-family:"axdfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+第三步：挑选相应图标并获取字体编码，应用于页面
+<i class="axdfont">&#x33;</i>
+<i class="axdfont icon_xiaoxi"></i>
